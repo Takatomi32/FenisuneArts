@@ -2,51 +2,59 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>FenisuneArts</title>
     <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;900&family=Rajdhani:wght@600&display=swap" rel="stylesheet">
+    
     <style>
-        /* This moves your style.css code directly into the HTML */
+        /* This section replaces your style.css */
         body {
             margin: 0;
             padding: 0;
-            /* Change this to your actual image name */
-            background: url('image_19b805.png') no-repeat center center fixed;
+            background-color: #0b0d17; /* Dark Galaxy Blue */
+            /* Replace the name below with your actual image file */
+            background-image: url('image_19b805.png'); 
             background-size: cover;
-            background-color: #0b0d17; 
+            background-position: center;
+            background-attachment: fixed;
             font-family: 'Rajdhani', sans-serif;
+            height: 100vh;
         }
 
         .navbar {
             width: 100%;
-            padding: 25px 0;
-            display: flex;
-            justify-content: center;
-            background: rgba(0, 0, 0, 0.4); /* Darker tint for visibility */
-            backdrop-filter: blur(10px);
-            -webkit-backdrop-filter: blur(10px);
-            border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+            background: rgba(0, 0, 0, 0.6); /* Semi-transparent black */
+            backdrop-filter: blur(15px);
+            -webkit-backdrop-filter: blur(15px);
+            border-bottom: 1px solid rgba(255, 157, 92, 0.3);
+            padding: 20px 0;
+            position: fixed;
+            top: 0;
         }
 
         .nav-links {
             list-style: none;
             display: flex;
-            gap: 40px;
+            justify-content: center;
+            gap: 35px;
             margin: 0;
             padding: 0;
         }
 
         .nav-links li a {
             text-decoration: none;
-            color: white;
+            color: #ffffff;
             font-family: 'Orbitron', sans-serif;
-            font-size: 14px;
+            font-size: 13px;
             letter-spacing: 2px;
             text-transform: uppercase;
-            transition: 0.3s;
+            transition: 0.3s ease;
         }
 
+        /* Fox Orange Hover Effect */
         .nav-links li a:hover {
-            color: #ff9d5c; /* Fox Orange */
+            color: #ff9d5c;
+            text-shadow: 0 0 8px rgba(255, 157, 92, 0.8);
         }
     </style>
 </head>
