@@ -2,21 +2,63 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-     <title>FenisuneArts</title>
-     <link rel="stylesheet" href="style.css">
+    <title>FenisuneArts</title>
     <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;900&family=Rajdhani:wght@600&display=swap" rel="stylesheet">
+    <style>
+        /* This moves your style.css code directly into the HTML */
+        body {
+            margin: 0;
+            padding: 0;
+            /* Change this to your actual image name */
+            background: url('image_19b805.png') no-repeat center center fixed;
+            background-size: cover;
+            background-color: #0b0d17; 
+            font-family: 'Rajdhani', sans-serif;
+        }
+
+        .navbar {
+            width: 100%;
+            padding: 25px 0;
+            display: flex;
+            justify-content: center;
+            background: rgba(0, 0, 0, 0.4); /* Darker tint for visibility */
+            backdrop-filter: blur(10px);
+            -webkit-backdrop-filter: blur(10px);
+            border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+        }
+
+        .nav-links {
+            list-style: none;
+            display: flex;
+            gap: 40px;
+            margin: 0;
+            padding: 0;
+        }
+
+        .nav-links li a {
+            text-decoration: none;
+            color: white;
+            font-family: 'Orbitron', sans-serif;
+            font-size: 14px;
+            letter-spacing: 2px;
+            text-transform: uppercase;
+            transition: 0.3s;
+        }
+
+        .nav-links li a:hover {
+            color: #ff9d5c; /* Fox Orange */
+        }
+    </style>
 </head>
 <body>
 
-   <nav class="navbar">
-        <div class="nav-container">
-            <ul class="nav-links">
-                <li><a href="home.html" class="active">Home</a></li>
-                <li><a href="about.html" class="active">About</a></li>
-                <li><a href="personalities.html" class="active">Personalities</a></li>
-                <li><a href="socials.html" class="active">Socials</a></li>
-            </ul>
-        </div>
+    <nav class="navbar">
+        <ul class="nav-links">
+            <li><a href="home.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="personalities.html">Personalities</a></li>
+            <li><a href="socials.html">Socials</a></li>
+        </ul>
     </nav>
 
 </body>
