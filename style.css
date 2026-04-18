@@ -13,7 +13,6 @@
 }
 
 body {
-    /* 1. REPLACE: The old body with this blue-to-purple gradient */
     background: linear-gradient(135deg, var(--deep-space) 0%, var(--galaxy-blue) 40%, #2D1B4E 100%);
     background-attachment: fixed;
     color: #ffffff;
@@ -43,7 +42,6 @@ body {
     align-items: center;
 }
 
-/* 2. REPLACE: The old logo-text with this updated glowing version */
 .logo-text {
     font-family: 'Orbitron', sans-serif;
     font-size: 1.6rem;
@@ -84,7 +82,6 @@ body {
     justify-content: center;
     text-align: center;
     position: relative;
-    /* Adding subtle stars */
     background-image: radial-gradient(white, rgba(255,255,255,.1) 1px, transparent 40px);
     background-size: 100px 100px;
 }
@@ -93,7 +90,6 @@ body {
     z-index: 2;
 }
 
-/* 3. REPLACE: The old h1 with this "FenisuArts" specific style */
 .main-title {
     font-family: 'Orbitron', sans-serif;
     font-size: 5.5rem;
@@ -172,6 +168,7 @@ body {
     gap: 25px;
     width: 90%;
     max-width: 1000px;
+    justify-content: center; /* Centers the cards */
 }
 
 .media-card {
@@ -186,8 +183,25 @@ body {
     overflow: hidden;
 }
 
-.media-card h2 { font-family: 'Orbitron'; color: #fff; margin-bottom: 10px; }
-.media-card:hover { transform: translateY(-10px); background: rgba(255, 255, 255, 0.1); }
+.media-card h2 { 
+    font-family: 'Orbitron'; 
+    color: #fff; 
+    margin-bottom: 10px; 
+}
+
+/* Updated black description text */
+.media-card p {
+    color: #000000;
+    font-size: 0.9rem;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-weight: 600;
+}
+
+.media-card:hover { 
+    transform: translateY(-10px); 
+    background: rgba(255, 255, 255, 0.1); 
+}
 
 .insta:hover { border-color: #e1306c; box-shadow: 0 0 20px rgba(225, 48, 108, 0.4); }
 .tiktok:hover { border-color: #ff0050; box-shadow: 0 0 20px rgba(255, 0, 80, 0.4); }
