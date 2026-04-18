@@ -218,3 +218,76 @@ h1 {
     0% { top: 0; }
     100% { top: 100%; }
 }
+
+:root {
+    --neon-cyan: #00ffff;
+    --fox-purple: #9d00ff;
+    --deep-space: #05050a;
+}
+
+body {
+    background-color: var(--deep-space);
+    /* Adding a nebula-like background gradient */
+    background-image: 
+        radial-gradient(circle at 50% 50%, rgba(157, 0, 255, 0.15), transparent 50%),
+        radial-gradient(circle at 10% 10%, rgba(0, 255, 255, 0.1), transparent 30%);
+    color: #ffffff;
+    font-family: 'Rajdhani', sans-serif;
+    min-height: 100vh;
+}
+
+/* Updated Navbar Logo to match the image colors */
+.logo-text {
+    font-family: 'Orbitron', sans-serif;
+    font-size: 1.6rem;
+    font-weight: 900;
+    color: var(--neon-cyan);
+    text-shadow: 0 0 10px var(--neon-cyan);
+    letter-spacing: 1px;
+}
+
+.logo-text span {
+    color: var(--fox-purple);
+    text-shadow: 0 0 15px var(--fox-purple);
+}
+
+/* Hero Section Title - Replicating the image aesthetic */
+.main-title {
+    font-family: 'Orbitron', sans-serif;
+    font-size: 5.5rem;
+    font-weight: 900;
+    color: var(--fox-purple);
+    /* This creates that thick cyan glow from your reference */
+    text-shadow: 
+        0 0 10px var(--neon-cyan),
+        0 0 20px var(--neon-cyan),
+        0 0 40px var(--neon-cyan);
+    letter-spacing: 8px;
+    margin-bottom: 5px;
+}
+
+.tagline {
+    font-size: 1.1rem;
+    letter-spacing: 5px;
+    color: #ddd;
+    text-transform: uppercase;
+    margin-bottom: 40px;
+    opacity: 0.8;
+}
+
+/* Button glow update */
+.btn-main {
+    background: var(--fox-purple);
+    border: 2px solid var(--neon-cyan);
+    color: white;
+    padding: 12px 35px;
+    text-decoration: none;
+    font-family: 'Orbitron', sans-serif;
+    box-shadow: 0 0 15px rgba(0, 255, 255, 0.3);
+    transition: 0.3s;
+}
+
+.btn-main:hover {
+    box-shadow: 0 0 25px var(--neon-cyan);
+    transform: scale(1.05);
+}
